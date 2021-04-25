@@ -40,6 +40,7 @@
 					$user = mysqli_fetch_assoc($result_set);
 					$_SESSION['user_id'] = $user['id'];
 					$_SESSION['u_first_name'] = $user['u_first_name'];
+					$_SESSION['u_nic_no'] = $user['u_nic_no'];
 					//redirect to users.php
 					header('Location: home.php');
 				}else{
