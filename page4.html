@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>	
+	<h1>@ User Account Registration..</h1>
+
+	<form>
+		<div class="row m-2">
+			<a class="col-md-2 col-sm-6 btn btn-outline-primary m-1" href="map4.html">Tap here to mark your location on google maps</a>
+			<input class="col-md-2 col-sm-6 btn btn-outline-secondary m-1" type="reset" name="reset">
+		</div>
+		<div class="row m-2 ">
+			<div class="col-md-2 col-sm-6 bg-warning"><label for="newLatId1">Latitude :</label></div>
+			<div class="col-md-2 col-sm-6 "><input type="text" id="newLatId1" class="text-dark" name="newLatId1" disabled=""></div>
+		</div>
+		<div class="row m-2">
+			<div class="col-md-2 col-sm-6 bg-warning"><label for="newLngId1">Longitude :</label></div>
+			<div class="col-md-2 col-sm-6"><input type="text" id="newLngId1" name="newLngId1" disabled=""></div>
+		</div>
+		</div>
+	</form>
+
+
+	<script type="text/javascript">
+		//get items from local storage
+		let Lat1 = localStorage.getItem("latitude1");
+		let Lng1 = localStorage.getItem("longitude1");
+		//assign items for Id
+		document.getElementById("newLatId1").value= Lat1;
+		document.getElementById("newLngId1").value= Lng1;
+
+		console.log(Lat1);
+		console.log(Lng1);
+		
+	</script>
+
+</body>
+</html>
