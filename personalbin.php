@@ -47,31 +47,49 @@
 <?php
     if(isset($_POST['sasa'])){
 
-       print_r($_POST);
+      //  print_r($_POST);
 
 
-       echo "".$plastic_q    = $_POST['plastic_q']."   "; 
-       echo "".$plastic_sell    = $_POST['plastic_sell']."   ";
-       echo "".$organic_q    = $_POST['organic_q']."   ";
-       echo "".$organic_sell    = $_POST['organic_sell']."   ";
-       echo "".$polythene_q   = $_POST['polythene_q']."   ";
-       echo "".$polythene_sell    = $_POST['polythene_sell']."   ";
-       echo "".$metal_q    = $_POST['metal_q']."   ";
-       echo "".$metal_sell    = $_POST['metal_sell']."   ";
-       echo "".$paper_q    = $_POST['paper_q']."   ";
-       echo "".$paper_sell    = $_POST['paper_sell']."   ";
-       echo "".$coconut_shell_q    = $_POST['coconut_shell_q']."   ";
-       echo "".$coconut_shell_sell    = $_POST['coconut_shell_sell']."   ";
-       echo "".$glass_q    = $_POST['glass_q']."   ";
-       echo "".$glass_sell    = $_POST['glass_sell']."   ";
-       echo "".$fabric_q    = $_POST['fabric_q']."   ";
-       echo "".$fabric_sell    = $_POST['fabric_sell']."   ";
-       echo "".$e_waste_q    = $_POST['e-waste_sell']."   ";
-       echo "".$e_waste_sell    = $_POST['e-waste_q']."   ";
+      //  echo "".
+       $plastic_q    = $_POST['plastic_q']."   "; 
+      //  echo "".
+       $plastic_sell    = $_POST['plastic_sell']."   ";
+      //  echo "".
+       $organic_q    = $_POST['organic_q']."   ";
+      //  echo "".
+       $organic_sell    = $_POST['organic_sell']."   ";
+      //  echo "".
+       $polythene_q   = $_POST['polythene_q']."   ";
+      //  echo "".
+       $polythene_sell    = $_POST['polythene_sell']."   ";
+      //  echo "".
+       $metal_q    = $_POST['metal_q']."   ";
+      //  echo "".
+       $metal_sell    = $_POST['metal_sell']."   ";
+      //  echo "".
+       $paper_q    = $_POST['paper_q']."   ";
+      //  echo "".
+       $paper_sell    = $_POST['paper_sell']."   ";
+      //  echo "".
+       $coconut_shell_q    = $_POST['coconut_shell_q']."   ";
+      //  echo "".
+       $coconut_shell_sell    = $_POST['coconut_shell_sell']."   ";
+      //  echo "".
+       $glass_q    = $_POST['glass_q']."   ";
+      //  echo "".
+       $glass_sell    = $_POST['glass_sell']."   ";
+      //  echo "".
+       $fabric_q    = $_POST['fabric_q']."   ";
+      //  echo "".
+       $fabric_sell    = $_POST['fabric_sell']."   ";
+      //  echo "".
+       $e_waste_q    = $_POST['e-waste_sell']."   ";
+      //  echo "".
+       $e_waste_sell    = $_POST['e-waste_q']."   ";
        $my_date = date("Y-m-d H:i:s"); 
-       echo "".$my_date ."   ";
+      //  echo "".$my_date ."   ";
        $u_nic_no= $_SESSION['u_nic_no'];
-       echo "".$u_nic_no."   ";
+      //  echo "".$u_nic_no."   ";
 
 
       $query="INSERT INTO `personal_bin`( `u_nic_no`, `update_date`, `plastic_q`, `plastic_sell`, `organic_q`, `organic_sell`, `polythene_q`, `polythene_sell`, `metal_q`, `metal_sell`, `paper_q`, `paper_sell`, `coconut_shell_q`, `coconut_shell_sell`, `glass_q`, `glass_sell`, `fabric_q`, `fabric_sell`, `e-waste_q`, `e-waste_sell`) VALUES 
